@@ -1,28 +1,28 @@
 
--- Create tables
-CREATE TABLE IF NOT EXISTS ingredients (
-    name VARCHAR(50) PRIMARY KEY,
-    quantity INT
-);
+    -- Create tables
+    CREATE TABLE IF NOT EXISTS ingredients (
+        name VARCHAR(50) PRIMARY KEY,
+        quantity INT
+    );
 
-CREATE TABLE IF NOT EXISTS supplies (
-    name VARCHAR(50) PRIMARY KEY,
-    quantity INT
-);
+    CREATE TABLE IF NOT EXISTS supplies (
+        name VARCHAR(50) PRIMARY KEY,
+        quantity INT
+    );
 
-CREATE TABLE IF NOT EXISTS menu_items (
-    name VARCHAR(50) PRIMARY KEY,
-    price NUMERIC(5,2)
-);
+    CREATE TABLE IF NOT EXISTS menu_items (
+        name VARCHAR(50) PRIMARY KEY,
+        price NUMERIC(5,2)
+    );
 
-CREATE TABLE IF NOT EXISTS menu_item_ingredients (
-    menu_item_name VARCHAR(50),
-    ingredient_name VARCHAR(50),
-    FOREIGN KEY (menu_item_name) REFERENCES menu_items(name),
-    FOREIGN KEY (ingredient_name) REFERENCES ingredients(name)
-);
+    CREATE TABLE IF NOT EXISTS menu_item_ingredients (
+        menu_item_name VARCHAR(50),
+        ingredient_name VARCHAR(50),
+        FOREIGN KEY (menu_item_name) REFERENCES menu_items(name),
+        FOREIGN KEY (ingredient_name) REFERENCES ingredients(name)
+    );
 
-INSERT INTO ingredients (name, quantity) VALUES ('black_tea', 500);
+    INSERT INTO ingredients (name, quantity) VALUES ('black_tea', 500);
 INSERT INTO ingredients (name, quantity) VALUES ('green_tea', 444);
 INSERT INTO ingredients (name, quantity) VALUES ('honey_tea', 500);
 INSERT INTO ingredients (name, quantity) VALUES ('thai_tea', 284);
