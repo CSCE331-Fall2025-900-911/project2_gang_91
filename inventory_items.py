@@ -81,30 +81,30 @@ with open("insert_data.sql", "w") as f:
     
     # creating the tables in SQL
     f.write("""
--- Create tables
-CREATE TABLE IF NOT EXISTS ingredients (
-    name VARCHAR(50) PRIMARY KEY,
-    quantity INT
-);
+    -- Create tables
+    CREATE TABLE IF NOT EXISTS ingredients (
+        name VARCHAR(50) PRIMARY KEY,
+        quantity INT
+    );
 
-CREATE TABLE IF NOT EXISTS supplies (
-    name VARCHAR(50) PRIMARY KEY,
-    quantity INT
-);
+    CREATE TABLE IF NOT EXISTS supplies (
+        name VARCHAR(50) PRIMARY KEY,
+        quantity INT
+    );
 
-CREATE TABLE IF NOT EXISTS menu_items (
-    name VARCHAR(50) PRIMARY KEY,
-    price NUMERIC(5,2)
-);
+    CREATE TABLE IF NOT EXISTS menu_items (
+        name VARCHAR(50) PRIMARY KEY,
+        price NUMERIC(5,2)
+    );
 
-CREATE TABLE IF NOT EXISTS menu_item_ingredients (
-    menu_item_name VARCHAR(50),
-    ingredient_name VARCHAR(50),
-    FOREIGN KEY (menu_item_name) REFERENCES menu_items(name),
-    FOREIGN KEY (ingredient_name) REFERENCES ingredients(name)
-);
+    CREATE TABLE IF NOT EXISTS menu_item_ingredients (
+        menu_item_name VARCHAR(50),
+        ingredient_name VARCHAR(50),
+        FOREIGN KEY (menu_item_name) REFERENCES menu_items(name),
+        FOREIGN KEY (ingredient_name) REFERENCES ingredients(name)
+    );
 
-""")
+    """)
     
     # Ingredients table
     for ingredient, quantity in ingredients.items():
