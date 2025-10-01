@@ -2,8 +2,9 @@
 
 # Boba shop ingredients
 ingredients = {
-    "black_tea": 40,
+    "black_tea": 500,
     "green_tea": 444,
+    "honey_tea": 500,
     "thai_tea": 284,
     "coffee": 40,
     "milk": 152,
@@ -37,9 +38,9 @@ supplies = {
 
 # Boba shop menu_items
 menu_items = {
-    "Classic Pearl Milk Tea": ["black_tea", "milk", "tapioca_pearl", "ice"],
+    "Honey Pearl Milk Tea": ["honey_tea", "milk", "tapioca_pearl", "ice"],
     "Mango Green Milk Tea": ["green_tea", "milk", "mango_syrup", "tapioca_pearl", "ice"],
-    "Coffee Crema": ["coffee", "milk", "cream", "ice"],
+    "Coffee Creama": ["coffee", "milk", "cream", "ice"],
     "Thai Pearl Milk Tea": ["thai_tea", "milk", "tapioca_pearl", "ice"],
     "Classic Tea": ["black_tea", "ice"],
     "Honey Tea": ["black_tea", "honey", "ice"],
@@ -48,31 +49,31 @@ menu_items = {
     "Mango Green Tea": ["green_tea", "mango_syrup", "ice"],
     "Tiger Boba": ["black_tea", "milk", "brown_sugar_syrup", "tapioca_pearl", "ice"],
     "Halo Halo": ["milk", "tapioca_pearl", "red_bean", "pudding", "ice"],
-    "Strawberry Coconut Ice Blended": ["strawberry_syrup", "coconut_milk", "ice", "blender"],
+    "Strawberry Coconut": ["strawberry_syrup", "coconut_milk", "ice", "blender"],
+    "Oreo Ice Blended": ["oreo_crush", "milk", "tapioca_pearl", "ice", "blender"],
+    "Taro Ice Blended": ["taro_syrup", "milk", "pudding", "ice", "blender"],
     "Mango Matcha Fresh Milk": ["matcha_powder", "milk", "mango_syrup", "ice"],
-    "Strawberry Matcha Fresh Milk": ["matcha_powder", "milk", "strawberry_syrup", "ice"],
-    "Oreo with Pearl Ice Blended": ["oreo_crush", "milk", "tapioca_pearl", "ice", "blender"],
-    "Taro Ice Blended with Pudding": ["taro_syrup", "milk", "pudding", "ice", "blender"]
+    "Strawberry Matcha Fresh Milk": ["matcha_powder", "milk", "strawberry_syrup", "ice"]
 }
 
 # Boba shop menu prices
 menu_prices = {
-    "Classic Pearl Milk Tea": 5.80,
-    "Mango Green Milk Tea": 6.50,
-    "Coffee Crema": 6.50,
-    "Thai Pearl Milk Tea": 6.25,
-    "Classic Tea": 4.65,
-    "Honey Tea": 4.85,
-    "Peach Tea with Honey Jelly": 6.25,
-    "Honey Lemonade": 5.20,
-    "Mango Green Tea": 5.80,
-    "Tiger Boba": 6.50,
-    "Halo Halo": 6.95,
-    "Strawberry Coconut Ice Blended": 6.50,
-    "Mango Matcha Fresh Milk": 6.50,
-    "Strawberry Matcha Fresh Milk": 6.50,
-    "Oreo with Pearl Ice Blended": 6.75,
-    "Taro Ice Blended with Pudding": 6.75
+    "Classic Tea": 4.75,
+    "Honey Tea": 4.95,
+    "Honey Pearl Milk Tea": 6.15,
+    "Mango Green Milk Tea": 6.75,
+    "Coffee Creama": 6.75,
+    "Thai Pearl Milk Tea": 6.50,
+    "Peach Tea with Honey Jelly": 6.40,
+    "Honey Lemonade": 5.50,
+    "Mango Green Tea": 5.95,
+    "Tiger Boba": 6.75,
+    "Halo Halo": 7.25,
+    "Strawberry Coconut": 6.75,
+    "Oreo Ice Blended": 6.95,
+    "Taro Ice Blended": 6.95,
+    "Mango Matcha Fresh Milk": 6.75,
+    "Strawberry Matcha Fresh Milk": 6.75
 }
 
 # Generating SQL file
